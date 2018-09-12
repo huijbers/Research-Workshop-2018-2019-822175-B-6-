@@ -1,0 +1,182 @@
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in,headheight=3ex,headsep=3ex]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+
+\newcommand{\blankline}{\quad\pagebreak[2]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify Course title, instructor name, semester here %%%%%%%%
+
+\title{822175-B-6: Research Workshop: CSAI}
+\author{Willem Huijbers}
+\date{Spring, 2019}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[sc]{mathpazo}
+\linespread{1.05} % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+\usepackage[mmddyyyy]{datetime}% http://ctan.org/pkg/datetime
+\usepackage{advdate}% http://ctan.org/pkg/advdate
+\newdateformat{syldate}{\twodigit{\THEMONTH}/\twodigit{\THEDAY}}
+\newsavebox{\MONDAY}\savebox{\MONDAY}{Mon}% Mon
+\newcommand{\week}[1]{%
+%  \cleardate{mydate}% Clear date
+% \newdate{mydate}{\the\day}{\the\month}{\the\year}% Store date
+  \paragraph*{\kern-2ex\quad #1, \syldate{\today} - \AdvanceDate[4]\syldate{\today}:}% Set heading  \quad #1
+%  \setbox1=\hbox{\shortdayofweekname{\getdateday{mydate}}{\getdatemonth{mydate}}{\getdateyear{mydate}}}%
+  \ifdim\wd1=\wd\MONDAY
+    \AdvanceDate[7]
+  \else
+    \AdvanceDate[7]
+  \fi%
+}
+\usepackage{setspace}
+\usepackage{multicol}
+%\usepackage{indentfirst}
+\usepackage{fancyhdr,lastpage}
+\usepackage{url}
+\pagestyle{fancy}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{amsmath}
+\usepackage{layout}
+
+\lhead{}
+\chead{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify header here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\rhead{\footnotesize Research Workshop}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lfoot{}
+\cfoot{\small \thepage/\pageref*{LastPage}}
+\rfoot{}
+
+\usepackage{array, xcolor}
+\usepackage{color,hyperref}
+\definecolor{clemsonorange}{HTML}{EA6A20}
+\hypersetup{colorlinks,breaklinks,linkcolor=clemsonorange,urlcolor=clemsonorange,anchorcolor=clemsonorange,citecolor=black}
+
+\begin{document}
+
+\maketitle
+
+\blankline
+
+\begin{tabular*}{.93\textwidth}{@{\extracolsep{\fill}}lr}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify information %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+E-mail: \texttt{w.huijbers@uvt.nl} & Web: \href{https://github.com/huijbers}{\tt\bf https://github.com/huijbers}  \\
+
+Office Hour (tentative): W 10-11:45am  &  Class Hours (tentative): T/Th 3-4:15pm \\
+
+ Office: D336 & Class Room: DZ??? \\
+
+&  \\
+\hline
+\end{tabular*}
+
+\vspace{5 mm}
+
+% First Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Course Description}
+
+Research skills in play an increasingly important role in industry and academia. In this course, students will learn the research cycle from beginning (formulation and motivation of the research question, literature review) to the end (interpreting and reporting results). The different methods and techniques that are commonly used in cognitive science and AI research will be applied and discussed.
+\bigskip
+
+% Second Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Required Materials}
+\begin{itemize}
+\item literature will be provided during the course via Blackboard 
+\end{itemize}
+% Third Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Prerequisites}
+\begin{itemize}
+\item 15 research points in the participation pool
+\end{itemize}
+% Fourth Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Learning Goals}
+\begin{enumerate}
+\item recognize, describe, select, and apply different research methods;
+\item recognize the phases of empirical research and divide the research process in these phases;
+\item select and apply relevant research techniques to each of the phases;
+\item report on research in both cognitive science and AI, including a poster, a conference abstract, and a paper.
+\item know how and where to search for relevant academic literature, recognize academic literature as such, know the guidelines for referring to literature
+\item Presentation skills (to do)
+
+
+\end{enumerate}
+
+% Fifth Section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Course Structure}
+
+\subsection*{Class Structure}
+
+The course will be focused on two projects. An individual and a group project.\\ 
+\\
+In the group assignments, the students will conduct an experiment that includes collection of novel data. The empirical cycle is split up into a number assignments. Each group will design, collect data, analyze, interpret and report on their own study.\\
+\\
+In the individual assignments, the students will conduct an experiment with existing data, as is common in the context of machine learning or (partial) replication studies. Each student will analyze, interpret and report on their individual research project.
+The course serves as a preparation for individual bachelor thesis. 
+
+
+\subsection*{Assessments}
+
+The course will be examined through a final exam, several assignments and one presentation. To participate in the final exam, students will answer weekly discussion questions and practical assignments in data analysis and visualization. These will be announced weekly. The discussion questions and data analysis assignment should be uploaded on BlackBoard and are Pass/Fail. The partake in the final exam, the student is allowed to miss two assignments at maximum.
+
+
+
+\subsection*{Grading Policy}
+The final course grade will count the assessments using the following proportions:
+\begin{itemize}
+	\item \underline{\textbf{40\%}} of your grade will be determined by group assignment (research project).
+	\item \underline{\textbf{60\%}} of your grade will be determined by the individual assignment (presentation/qualitative paper)
+	
+
+
+\end{itemize}
+
+
+% Course Schedule %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section*{Schedule}
+
+The schedule runs from is tentative and subject to change. The spring semester  runs from 28-01-2019 to 12-07-2019
+
+% Set first date of the semester (for some reason this is a week before what comes up, but that's easy to get around)
+\SetDate[28/01/2019]
+\week{Week 01} Introduction
+\begin{itemize}
+\item Lecture: chapter 1
+\end{itemize}
+
+\
+
+\end{document}
+
+
+© 2017 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
